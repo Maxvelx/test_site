@@ -1,0 +1,125 @@
+@media screen and (max-width: 1320px) {
+
+    .container {
+        max-width: 1120px;
+    }
+
+    /*Header*/
+    .nav {
+        max-width: 1120px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+    .container {
+        max-width: 920px;
+    }
+
+    /*Header*/
+    .nav {
+        max-width: 920px;
+    }
+
+    .phone_block {
+        display: none;
+    }
+
+    .navbar > .responsive {
+        display: none;
+    }
+
+    .collapse_button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu_responsive {
+        display: grid;
+        position: absolute;
+        top: 96px;
+        right: 0;
+        margin: 0;
+        left: 0;
+        padding: 20px;
+        justify-content: center;
+        background: #ffffff;
+    }
+
+    .menu_responsive > .nav_link {
+        background: #FFFFFF;
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        margin-left: 0;
+        color: #252525;
+        animation-name: slideIn;
+        animation-duration: 1s;
+    }
+
+    @keyframes slideIn {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    /*Header end*/
+    /*    Content*/
+    /*    First block*/
+    .first_block > .right_grid {
+        display: none;
+    }
+
+    .second_block > .card > .img {
+        width: 48%;
+    }
+
+    .second_block > .card > .desc {
+        width: 52%;
+    }
+
+    /*    Footer*/
+    #footer {
+        height: 592px;
+    }
+
+    .footer {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer > .departments {
+        width: 312px;
+        margin-right: 24px;
+    }
+
+    .footer > .links {
+        width: 312px;
+        padding-bottom: 24px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .footer > .departments {
+        width: auto;
+        min-width: 264px;
+        margin-right: 24px;
+    }
+
+    .footer > .links {
+        width: 312px;
+        padding-bottom: 24px;
+    }
+    #footer {
+        height: 792px;
+    }
+}
